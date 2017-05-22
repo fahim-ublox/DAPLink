@@ -24,17 +24,6 @@
 // The file flash_blob.c must only be included in target.c
 #include "flash_blob.c"
 
-// target information
-//const target_cfg_t target_device = {
-//    .sector_size    = KB(1),
-//    .sector_cnt     = 128,
-//    .flash_start    = 0x08000000,
-//    .flash_end      = 0x08000000 + KB(128),
-//    .ram_start      = 0x20000000,
-//    .ram_end        = 0x20000000 + KB(20),
-//    .flash_algo     = (program_target_t *) &flash,
-//};
-
 const target_cfg_t target_device = {
     .sector_size    = KB(4),
     .sector_cnt     = 256,
